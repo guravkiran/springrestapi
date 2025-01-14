@@ -1,5 +1,5 @@
 name: AzureSpringCloud
-on: [push, workflow_dispatch]
+on: [push]
 permissions:
   id-token: write
   contents: read
