@@ -5,7 +5,7 @@ on:
   # Automatically trigger it when detected changes in repo
   push:
     branches: 
-      [ main ]
+      [ Test ]
     paths:
     - '**'
     - '.github/workflows/springrestapi-AutoDeployTrigger-ec24388c-308e-43c7-8233-9874505e58cd.yml'
