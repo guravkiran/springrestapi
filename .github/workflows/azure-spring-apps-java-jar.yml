@@ -1,5 +1,4 @@
 name: AzureSpringCloud
-on: [push]
 permissions:
   id-token: write
   contents: read
