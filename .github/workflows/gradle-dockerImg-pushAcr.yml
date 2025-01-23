@@ -48,5 +48,4 @@ jobs:
       with:
           push: true
           tags: ${{ secrets.ACR_LOGIN_SERVER }}/springrestapi:${{ github.sha }}
-          file: Dockerfile
-          context: springrestapi
+          file: springrestapi/Dockerfile
