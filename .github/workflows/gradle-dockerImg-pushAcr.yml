@@ -32,11 +32,9 @@ jobs:
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
-    - name: Setup Gradle
-      uses: gradle/actions/setup-gradle@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
-
-    - name: Build with Gradle
-      run: ./gradlew build
+    - name: maven build, clean
+      run: |
+          mvn clean package -DskipTests
 
     - name: Login to Azure Container Registry
       uses: azure/docker-login@v1
